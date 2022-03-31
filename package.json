@@ -1,0 +1,30 @@
+{
+  "name": "chrutils",
+  "version": "1.0.0",
+  "main": "dist/chrutils.cjs.js",
+  "module": "dist/chrutils.esm.js",
+  "browser": "dist/chrutils.umd.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1",
+    "rollup": "^1.29.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest --watch",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "jest": {
+    "transform": {
+      "^.+\\.(js|jsx)$": "babel-jest"
+    }
+  }
+}
