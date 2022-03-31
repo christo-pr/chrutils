@@ -15,11 +15,11 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: Install dev deps
+      - name: Install dev deps 🚧
         run: npm install
-      - name: Runt unit test
+      - name: Runt unit test 🧪
         run: npm test
-      - name: Build package
+      - name: Build package 🔧
         run: npm run build
 
   publish-npm:
@@ -30,7 +30,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          registry-url: https://registry.npmjs.org/
-      - uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
+      - name: Publish package on NPM 📦
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

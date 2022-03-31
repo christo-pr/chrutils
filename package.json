@@ -4,6 +4,24 @@
   "main": "dist/chrutils.cjs.js",
   "module": "dist/chrutils.esm.js",
   "browser": "dist/chrutils.umd.js",
+  "homepage": "https://github.com/christo-pr/chrutils",
+  "bugs": {
+    "url": "https://github.com/christo-pr/chrutils/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christo-pr/chrutils.git"
+  },
+  "keywords": [
+    "javascript",
+    "utils",
+    "utility-functions",
+    "debounce",
+    "parse"
+  ],
+  "author": {
+    "name": "Christofer Flores (@christo-pr)"
+  },
   "dependencies": {},
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",
