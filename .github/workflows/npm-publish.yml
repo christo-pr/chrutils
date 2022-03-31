@@ -21,4 +21,4 @@ jobs:
       - name: Runt unit test
         run: npm test
       - name: Build package
-        run: npm build
+        run: npm run build
